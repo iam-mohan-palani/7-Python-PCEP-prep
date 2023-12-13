@@ -26,3 +26,6 @@ for i in range (num):
 
 for i in range (17,25):
         print(i)
+
+
+
