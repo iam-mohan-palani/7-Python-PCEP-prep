@@ -1,6 +1,6 @@
 # Start your Python journey here
 
-#1 ~~~ Fundamentals
+#Fundamentals
 
 #Print
 #Builtin function. Used to print values or another standard output.
@@ -64,6 +64,6 @@ minutes1= minutes*int(hours)
 
 print("\nYour sleep minutes: ", minutes1)
 
-#Operators1
+#Operators
 # == != > >= <= <
 print(5 != 10)
