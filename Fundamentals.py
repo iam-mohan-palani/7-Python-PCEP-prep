@@ -1,4 +1,10 @@
 # Start your Python journey here
+# Python is interpreted language, Python interpreter take our human friendly code and parses line by line and converts to machine friendly code.
+# Python written by C as C is understable by computers but also human friendly. 
+# Cpython translate python directly to C to speed up exceution of code.
+# Jython written by Java, its useful in env where there is already lot of Java code.
+# RPython is used by programmers to develop Pyhton itself since it doesn't need interpreter to run.
+ 
 
 #Fundamentals
 
