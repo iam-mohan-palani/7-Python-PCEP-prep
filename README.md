@@ -33,12 +33,14 @@ print(9 % 6 % 2) == 1(This operator has left-sided binding)
 print(2 ** 2 ** 3) ==256(The exponentiation operator uses right-sided binding)
 
 
-
 Priority	Operator	
-1	**	
-2	+, - (note: unary operators located next to the right of the power operator bind more strongly)	unary
+1	+, -	unary
+2	**	
 3	*, /, //, %	
 4	+, -	binary
+5	<, <=, >, >=	
+6	==, !=	
+
 
 print(2 * 3 % 5) ==1
 
@@ -50,8 +52,33 @@ Some operators act before others - the hierarchy of priorities:
 ->then the unary + and - (note: a unary operator to the right of the exponentiation operator binds more strongly, for example 4 ** -1 equals 0.25)
 ->then: *, /, and %,
 ->and finally, the lowest priority: binary + and -.
+
 Subexpressions in parentheses are always calculated first, e.g., 15 - 1 * (5 * (1 + 2)) = 0.
 
 The exponentiation operator uses right-sided binding, e.g., 2 ** 2 ** 3 = 256.
+
+Keywords
+Take a look at the list of words that play a very special role in every Python program.
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+They are called keywords or (more precisely) reserved keywords. They are reserved because you mustn't use them as names: neither for your variables, nor functions, nor any other named entities you want to create.
+
+String operators
+fnam = input("May I have your first name, please? ")
+lnam = input("May I have your last name, please? ")
+print("Thank you.")
+print("\nYour name is " + fnam + " " + lnam + ".")
+
+Replication
+For example:
+
+"James" * 3 gives "JamesJamesJames"
+3 * "an" gives "ananan"
+5 * "2" (or "2" * 5) gives "22222" (not 10!)
+
+x = int(input("Enter a number: ")) # The user enters 2
+print(x * "5")
+Output:55
 
 
