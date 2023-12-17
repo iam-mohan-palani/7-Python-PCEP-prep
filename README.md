@@ -81,4 +81,165 @@ x = int(input("Enter a number: ")) # The user enters 2
 print(x * "5")
 Output:55
 
+#Finding largest in 200 numbers
+largest_number = -999999999
+while True:
+  number = int(input())
+  if number == -1:
+    print(largest_number)
+    exit()
+  if number > largest_number:
+    largest_number = number
+
+#Vowel eater
+user_word=input("Enter:")
+user_word = user_word.upper()
+for letter in user_word:
+    if (letter == 'A' or letter == 'E'or letter == 'I' or letter == 'O'or letter == 'U'):
+     continue
+    else:
+        print(letter)
+
+#Finding Pyramid Block
+blocks = int(input("Enter the number of blocks: "))
+height = 0
+inlayer = 1
+while inlayer <= blocks:
+    height += 1
+    blocks -= inlayer
+    inlayer += 1
+print("The height of the pyramid: ", height)
+
+#Collatz's hypothesis
+num=int(input('Enter:'))
+counter=0
+while (num != 1):
+    if (num%2 == 0):
+        num/=2
+        print(num)
+        counter+=1
+    else:
+        num= 3 * num + 1
+        counter+=1
+print('steps=', + int(counter))
+
+
+Bitwise operators
+Here are all of them:
+& (ampersand) ‒ bitwise conjunction;
+| (bar) ‒ bitwise disjunction;
+~ (tilde) ‒ bitwise negation;
+^ (caret) ‒ bitwise exclusive or (xor).
+
+Bitwise operations (&, |, and ^)
+A	B     A & B   A | B   A ^ B
+0	0	0	0	0
+0	1	0	1	1
+1	0	0	1	1
+1	1	1	1	0
+
+And here is the updated priority table, containing all the operators introduced so far:
+
+Priority	Operator	
+1	~, +, -	unary
+2	**	
+3	*, /, //, %	
+4	+, -	binary
+5	<<, >>	
+6	<, <=, >, >=	
+7	==, !=	
+8	&	
+9	|	
+10	=, +=, -=, *=, /=, %=, &=, ^=, |=, >>=, <<=	
+
+
+#Lists
+
+beatles=[]
+beatles.append("John Lennon")
+beatles.append('Paul McCartney')
+beatles.append("George Harrison")
+print("Step 1:", beatles)
+
+for i in range(2):
+    add=input("Enter")
+    beatles.append(add)
+print("Step 2:", beatles)
+
+del beatles[3:]
+print("Step 3:", beatles)
+
+beatles.insert(0, "Ringo Starr")
+print("Step 4:", beatles)
+
+
+#Swap lists
+my_list = [8, 10, 6, 2, 4]  # list to sort
+swapped = True  # It's a little fake, we need it to enter the while loop.
+ 
+while swapped:
+    swapped = False  # no swaps so far
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True  # a swap occurred!
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+ print(my_list)
+####
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+largest = my_list[0]
+ 
+for i in my_list:
+    if i > largest:
+        largest = i
+ 
+print(largest)
+
+#####
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+largest = my_list[0]
+
+for i in range(1, len(my_list)):
+    if my_list[i] > largest:
+        largest = my_list[i]
+
+print(largest)
+
+
+####
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+to_find = 5
+found = False
+ 
+for i in range(len(my_list)):
+    found = my_list[i] == to_find
+    if found:
+        break
+ 
+if found:
+    print("Element found at index", i)
+else:
+    print("absent")
+
+ ####
+ drawn = [5, 11, 9, 42, 3, 49]
+bets = [3, 7, 11, 42, 34, 49]
+hits = 0
+ 
+for number in bets:
+    if number in drawn:
+        hits += 1
+ 
+print(hits)
+
+####
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+temp_list=[]
+for i in my_list:
+    print(i)
+    if i not in temp_list:
+        temp_list.append(i)
+print("The list with unique elements only:")
+print(temp_list)
+
+
 
