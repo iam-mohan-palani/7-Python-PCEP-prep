@@ -241,5 +241,66 @@ for i in my_list:
 print("The list with unique elements only:")
 print(temp_list)
 
+###
+squares = [x ** 2 for x in range(10)] -> (0, 1, 4, 9, 16, 25, 36, 49, 64, 81)
+twos = [2 ** i for i in range(8)] -> (1, 2, 4, 8, 16, 32, 64, 128)
+
+###
+BMI
+def ft_and_inch_to_m(ft, inch = 0.0):
+    return ft * 0.3048 + inch * 0.0254
+def lb_to_kg(lb):
+    return lb * 0.4535923
+def bmi(weight, height):
+    if height < 1.0 or height > 2.5 or weight < 20 or weight > 200:
+        return None
+    return weight / height ** 2
+print(bmi(weight = lb_to_kg(176), height = ft_and_inch_to_m(5, 7)))
+
+###Factorial
+def factorial_function(n):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+     product = 1
+    for i in range(2, n + 1):
+        product *= i
+    return product
+for n in range(1, 6): # testing
+    print(n, factorial_function(n))
+
+###Fib
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+ 
+    elem_1 = elem_2 = 1
+    the_sum = 0
+    for i in range(3, n + 1):
+        the_sum = elem_1 + elem_2
+        elem_1, elem_2 = elem_2, the_sum
+    return the_sum
+for n in range(1, 10): # testing
+    print(n, "->", fib(n))
+
+#Factorial (recursive)
+def factorial_function(n):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+    return n * factorial_function(n - 1)
+
+What else can tuples do for you?
+
+the len() function accepts tuples, and returns the number of elements contained inside;
+the + operator can join tuples together (we've shown you this already)
+the * operator can multiply tuples, just like lists;
+the in and not in operators work in the same way as in lists.
+ 
+
 
 
