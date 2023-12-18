@@ -5,17 +5,13 @@
 
 num1=int(input("Enter a number 1: "))
 num2=int(input("Enter a number 2: "))
-
 if(num1 >= 50 and num2 >= 50):
     print("Both numbers are above 50!!1")
 elif(num1 <= 50 or num2 <= 50):
     print("One of the number is less than 50 !!!")
 else:
     print("Both numbers are less than 50")
-
-
 num3=False
-
 if (not num3):
     print("\n OK")
 

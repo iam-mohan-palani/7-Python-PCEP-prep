@@ -1,5 +1,5 @@
 #Lists
-
+#Example #1
 countries=["India","USA","UK","Canada"]
 length=len(countries)
 
@@ -23,7 +23,26 @@ countries.insert(1, "Russia")
 
 print(countries)
 
+
+#Example #2
+beatles=[]
+beatles.append("John Lennon")
+beatles.append('Paul McCartney')
+beatles.append("George Harrison")
+print("Step 1:", beatles)
+for i in range(2):
+    add=input("Enter")
+    beatles.append(add)
+print("Step 2:", beatles)
+del beatles[3:]
+print("Step 3:", beatles)
+
+beatles.insert(0, "Ringo Starr")
+print("Step 4:", beatles)
+
+
 #Swap
+#Example #1
 temp =countries[2]
 countries[2]=countries[4]
 countries[4]=temp
@@ -33,6 +52,18 @@ print(countries)
 
 countries[2],countries[4]=countries[4],countries[2]
 print(countries)
+
+#Example #2
+my_list = [8, 10, 6, 2, 4]  # list to sort
+swapped = True  # It's a little fake, we need it to enter the while loop.
+ 
+while swapped:
+    swapped = False  # no swaps so far
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True  # a swap occurred!
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+print(my_list)
 
 #Sort
 number=[22,85,20,17,89]

@@ -73,3 +73,16 @@ print("\nYour sleep minutes: ", minutes1)
 #Operators
 # == != > >= <= <
 print(5 != 10)
+
+
+#CISCO
+
+print("2") == print(2)
+
+print(9 % 6 % 2) == 1 #(This operator has left-sided binding)
+print(2 ** 2 ** 3) ==256 #(The exponentiation operator uses right-sided binding)
+
+print(2 * 3 % 5) #== 1
+
+print((5 * ((25 % 13) + 100) / (2 * 13)) // 2) #==10.0
+
