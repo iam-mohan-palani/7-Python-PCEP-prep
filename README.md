@@ -114,8 +114,14 @@ the in and not in operators work in the same way as in lists.
 #to find dupilicates
 tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
 duplicates = tup.count(2)
-
 print(duplicates)    # outputs: 4
+
+# Practice Questions
+
+https://www.edusum.com/python-institute/python-institute-entry-level-python-programmer-pcep-certification-sample-questions
+https://www.youtube.com/watch?v=KNWm4k3dTAw
+https://www.certspots.com/python-institute-pcep-30-02-questions-boost-your-exam-preparation/
+
  
 
 
