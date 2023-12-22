@@ -121,6 +121,7 @@ print(duplicates)    # outputs: 4
 https://www.edusum.com/python-institute/python-institute-entry-level-python-programmer-pcep-certification-sample-questions
 https://www.youtube.com/watch?v=KNWm4k3dTAw
 https://www.certspots.com/python-institute-pcep-30-02-questions-boost-your-exam-preparation/
+https://roxy-wong.gitbook.io/pcep-30-02-practice-test-compendium/part-3-or-final-practice-test/final-practice-test/final-practice-test
 
  
 
